@@ -1,0 +1,27 @@
+#To make sure we don't have any version issues or dependencies(Especially if this is a new Ubuntu install) 
+
+sudo apt-get update -y; sudo apt-get upgrade -y
+
+#install Ruby and Ruby-dev dependencies 
+
+sudo apt install ruby ruby-dev
+
+#Install Git(If it is not already installed)
+
+sudo apt install git
+
+#Download BeEF source code
+
+git clone https://github.com/beefproject/beef
+
+#Change to the new beef directory
+
+cd beef
+
+#install beef
+
+sudo ./install
+
+#start beef
+
+sudo ./beef
